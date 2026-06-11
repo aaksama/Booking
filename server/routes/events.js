@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const {protect, admin} = require(' ../middleware/auth');
-const {getAllEvents, getEventById, createEvent, updateEvent, deleteEvent} = require('../controllers/eventController');
+const {protect, admin} = require('../middleware/auth');
+const {getAllEvents, getEventById, createEvent, updateEvent, deleteEvent} = require('../controller/eventController');
 
 //Get All Events
 router.get('/', getAllEvents);
